@@ -22,7 +22,7 @@ function src(typeofCard) {
 function viewCardNumber(cardNumber) {
   let number = "";
   if (cardNumber == 1) number = "A";
-  else if (cardNumber > 1 && cardNumber < 10) number = cardNumber;
+  else if (cardNumber > 1 && cardNumber < 11) number = cardNumber;
   else if (cardNumber == 11) number = "J";
   else if (cardNumber == 12) number = "Q";
   else number = "K";
@@ -259,6 +259,6 @@ function newCard() {
   let card = cardCreation(randomCards(), randomTypes());
   //let card = cardCreation(8, 2);
   postMessage(card);
-  setTimeout("newCard()", 700);
+  setTimeout("newCard()", 1000);
 }
 newCard();

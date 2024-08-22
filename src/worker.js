@@ -41,7 +41,6 @@ function createHeadFooter(cardNumber, typeofCard) {
     "'/></div></div>"
   );
 }
-
 function createBody(cardNumber, typeofCard) {
   let result = "";
   if (cardNumber > 1 && cardNumber < 11) {
@@ -193,9 +192,9 @@ function createBody(cardNumber, typeofCard) {
       } else {
         idMiddle = "";
       }
-      let rot ="";
-      if(i==2||i==3)rot="rotate";
-      result += "<div " + idMiddle + "  class='row "+rot+"'>";
+      let rot = "";
+      if (i == 2 || i == 3) rot = "rotate";
+      result += "<div " + idMiddle + "  class='row " + rot + "'>";
       for (let j = 0; j < 3; j++) {
         if (activeposition[cardNumber][pos]) {
           if (cardNumber == 9 && pos == 4) idMiddle = "id='moveimgplus'";

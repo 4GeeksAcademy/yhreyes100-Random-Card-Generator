@@ -253,7 +253,6 @@ function randomCards() {
 function randomTypes() {
   return Math.floor(Math.random() * 4) + 1;
 }
-
 function newCard() {
   let card = cardCreation(randomCards(), randomTypes());
   //let card = cardCreation(8, 2);
